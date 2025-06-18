@@ -1,0 +1,125 @@
+
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #bb86fc;
+  --nav-bg: #1f1f1f;
+  --nav-hover: #3700b3;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--nav-bg);
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--nav-bg);
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--nav-hover);
+}
+
+.container, main {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 2px solid var(--accent-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #1c1c1c;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--accent-color);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--nav-hover);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--nav-bg);
+  color: #aaa;
+  margin-top: 2rem;
+  border-top: 1px solid var(--accent-color);
+}
